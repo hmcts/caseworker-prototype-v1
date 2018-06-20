@@ -1,0 +1,274 @@
+// Path to assets for use with the file-url function
+// in the govuk frontend toolkit's url-helpers partial
+$path: "/public/images/";
+
+//Import GOV.UK Frontend
+@import "@govuk-frontend/all/all";
+
+// Patterns that aren't in Frontend
+@import 'patterns/check-your-answers';
+@import 'patterns/related-items';
+
+.code {
+  color: $govuk-text-colour;
+  background-color: $govuk-grey-4;
+
+  text-shadow: 0 1px $govuk-white;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  font-size: 14px;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  line-height: 1.5;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+
+  border: 1px solid $govuk-border-colour;
+  padding: 4px 4px 2px;
+}
+
+
+// Local fixes to GOV.UK frontend
+
+.markdown hr {
+  @include govuk-responsive-margin($govuk-spacing-responsive-6, "top");
+  @include govuk-responsive-margin($govuk-spacing-responsive-6, "bottom");
+}
+
+.govuk-list + .govuk-heading-l,
+.govuk-list + .govuk-heading-m,
+.govuk-list + .govuk-heading-s,
+.govuk-prose-scope ul + h2,
+.govuk-prose-scope ul + h3,
+.govuk-prose-scope ul + h4,
+.govuk-prose-scope pre + h2,
+.govuk-prose-scope pre + h3,
+.govuk-prose-scope pre + h4 {
+  @include govuk-responsive-padding($govuk-spacing-responsive-4, "top");
+}
+
+//FEEREG HEADER
+
+.feereg-header {
+    height: 53px;
+    background-color: #0b0c0c;
+}
+
+/* Service name style */
+.feereg-header-text a {
+  color: #fff;
+  display: block;
+  padding: 5px 0;
+  font-size: 27px;
+  font-weight: bold;
+  text-decoration:none;
+}
+
+/* Change the service name on hover */
+.feereg-header-text a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+//END
+//Feereg sign @include
+.signin-name-text a {
+  color: #fff !important;
+  display: block;
+  padding: 11px 0;
+  font-size: 19px;
+  font-weight: bold;
+  text-decoration:none;
+  text-align: right;
+}
+
+
+// FEEREG FOOTER
+
+.feereg-footer {
+  background-color: #dee0e2;
+}
+
+//END
+
+
+
+table {
+
+  border-collapse:separate;
+  border-spacing:5em;
+}
+
+.govuk-c-table__header-CCD{
+  @include govuk-font-bold-16;
+
+  padding: em($govuk-spacing-scale-2, 19px) em($govuk-spacing-scale-4, 19px) em($govuk-spacing-scale-2, 19px) 0;
+  border-bottom: 1px solid $govuk-border-colour;
+  text-align: left;
+}
+
+.govuk-c-table__cell-CCD {
+  @include govuk-font-regular-16;
+
+  padding: em($govuk-spacing-scale-2, 19px) em($govuk-spacing-scale-4, 19px) em($govuk-spacing-scale-2, 19px) 0;
+  border-bottom: 1px solid $govuk-border-colour;
+  text-align: left;
+}
+
+.govuk-c-table__cell-CCD-ref.table_linked {
+  border-left: 5px solid $govuk-link-colour;
+  padding-left: 3px;
+}
+.no-border-bottom td, .no-border-bottom th {
+  border-bottom: 0;
+}
+
+
+
+.govuk-c-table__cell-CCD-ref {
+  @include govuk-font-regular-19;
+
+  padding: em($govuk-spacing-scale-2, 19px) em($govuk-spacing-scale-4, 19px) em($govuk-spacing-scale-2, 19px) 0;
+  border-bottom: 1px solid $govuk-border-colour;
+  text-align: left;
+  padding-left: 0px;
+}
+
+.govuk-c-table__cell--numeric-CCD {
+  @include govuk-font-regular-16;
+
+  padding: em($govuk-spacing-scale-2, 19px) em($govuk-spacing-scale-4, 19px) em($govuk-spacing-scale-2, 19px) 0;
+  border-bottom: 1px solid $govuk-border-colour;
+  padding-right: 20px;
+  text-align:right;
+
+}
+
+.govuk-c-table__cell--numeric {
+  @include govuk-font-regular-tabular;
+}
+
+
+.govuk-c-table__header--numeric,
+.govuk-c-table__cell--numeric {
+  text-align: right;
+}
+
+.govuk-c-table__header-CCD:last-child,
+.govuk-c-table__cell-CCD:last-child,
+.govuk-c-table__cell-ref-CCD:last-child {
+  padding-right: 0;
+}
+
+.govuk-c-table__caption {
+  text-align: left;
+  @include govuk-font-bold-16;
+}
+
+.govuk-c-table__row {
+ td {
+   padding: 10px;
+ }
+}
+
+
+#subHeader{
+	height:50px;
+	background-color:#005EA5;
+	text-align:left;
+	padding-top:1px;
+padding-left:20px;}
+// text-align-last:right;
+
+#message{
+	background-color:#EAF4F9;
+	text-align:left;
+  font-weight:bold;
+	padding-top:1px;
+  padding-left:15px;
+  padding-bottom:5px;
+  padding-right:10px;}
+// text-align-last:right;
+
+
+.bluemessage {
+  border-left: 5px solid #005EA5;
+    background-color: #EAF4F9;
+    padding: 5px 10px
+
+}
+
+.messagelink {
+  text-align: right;
+}
+
+
+
+
+  #paragraphWhite{
+    color:#fff;
+  font-weight:bold;}
+
+
+
+  //Inside payment classes//
+
+  $table-padding: 10px;
+
+  .govuk-c-table__cell-CCD-column1-test{
+    @include govuk-font-regular-16;
+    border-bottom: 1px solid $govuk-border-colour;
+    padding: $table-padding;
+    text-align: left;
+    width: 220px;
+  }
+
+  .govuk-c-table__cell-CCD-column2-test{
+    @include govuk-font-regular-16;
+    border-bottom: 1px solid $govuk-border-colour;
+    padding: $table-padding;
+    text-align: left;
+  }
+  .govuk-c-table__cell-CCD-column3-test{
+    @include govuk-font-regular-16;
+    border-bottom: 1px solid $govuk-border-colour;
+    text-align: right;
+    padding: $table-padding;
+    padding-left: 0px;
+  }
+
+  .panel--border {
+    border-left: 5px solid #BFC1C3;
+    display: none;
+    padding: 10px;
+
+    &.show {
+      display: block;
+    }
+  }
+
+  .refund-payment-toggle {
+    display: none;
+    &.show {
+      display: block;
+    }
+  }
+
+  .cancel-refund {
+    display: none;
+  }
+
+// Take a look at in app/assets/sass/patterns/ to see which files are imported.
+// @import 'patterns/check-your-answers';
+// @import 'patterns/task-list';
+
+// Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you

@@ -1,0 +1,271 @@
+{% extends "layout-ccd.html" %}
+
+{% block page_title %}
+  Payment tab
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-o-width-container">
+
+  <!-- <a class="govuk-c-back-link" href="">Back</a> -->
+  <br/>
+  <div class="govuk-o-width-container">
+    <a href="" >Case list</a>
+    <!-- <a href="">Lorem ipsum...</a>
+    <a href="">Lorem ipsum...</a> -->
+  </div>
+
+  <main role="main" class="govuk-o-main-wrapper">
+    <div class="govuk-o-grid">
+      <div class="govuk-o-grid__item govuk-o-grid__item--full">
+
+         <div id="subHeader">
+            <p id="paragraphWhite">2309-1129-5569-2669</p>
+            <!-- <p id="paragraphWhite">Print</p> -->
+         </div>
+
+         <br/>
+
+         <h1 class="govuk-heading-xl">
+           Payment tab
+         </h1>
+
+         <table class="govuk-c-table">
+           <!-- <caption class="govuk-c-table__caption">Months and rates</caption> -->
+             <thead class="govuk-c-table__head">
+               <tr class="govuk-c-table__row">
+                 <th class="govuk-c-table__header-CCD" scope="col">Payment reference</th>
+
+                 <th class="govuk-c-table__header-CCD" scope="col">Date</th>
+                 <th class="govuk-c-table__header-CCD" scope="col">Payment method</th>
+                 <th class="govuk-c-table__header-CCD" scope="col">Payment amount</th>
+                 <th class="govuk-c-table__header-CCD" scope="col">Status</th>
+                 <th class="govuk-c-table__header-CCD" scope="col">Remission</th>
+                 <th class="govuk-c-table__header-CCD" scope="col">Refund</th>
+               </tr>
+
+
+             </thead>
+               <tbody class="govuk-c-table__body">
+                 <!-- <tr class="govuk-c-table__row">
+                   <th class="govuk-c-table__cell-CCD-ref" scope="row"><a href="1RC-1521-1095-0964-3143.html">RC-1521-1095-0964-3143<a/></th>
+                   <td class="govuk-c-table__cell-CCD">Issue</td>
+                   <td class="govuk-c-table__cell-CCD">14 Feb 2018</td>
+                   <td class="govuk-c-table__cell-CCD">Credit account</td>
+                   <td class="govuk-c-table__cell-CCD">£190.50</td>
+                   <td class="govuk-c-table__cell-CCD">Success</td>
+                   <td class="govuk-c-table__cell-CCD">Yes</td>
+                   <td class="govuk-c-table__cell-CCD">No</td>
+                 </tr> -->
+
+                 <!-- <tr class="govuk-c-table__row">
+                   <th class="govuk-c-table__cell-CCD-ref" scope="row"><a href="2RC-7745-1623-4870-7132.html">RC-7745-1623-4870-7132<a/></th>
+                   <td class="govuk-c-table__cell-CCD">Hearing</td>
+                   <td class="govuk-c-table__cell-CCD">09 Mar 2018</td>
+                   <td class="govuk-c-table__cell-CCD">Card</td>
+                   <td class="govuk-c-table__cell-CCD">£100.00</td>
+                   <td class="govuk-c-table__cell-CCD">Success</td>
+                   <td class="govuk-c-table__cell-CCD">No</td>
+                   <td class="govuk-c-table__cell-CCD">No</td>
+                 </tr> -->
+
+                 <!-- <tr class="govuk-c-table__row no-border-bottom">
+                   <th class="govuk-c-table__cell-CCD-ref table_linked" scope="row"><a href="">RC-0000-0000-0000-0000<a/></th>
+                   <td class="govuk-c-table__cell-CCD">-</td>
+                   <td class="govuk-c-table__cell-CCD">-</td>
+                   <td class="govuk-c-table__cell-CCD">-</td>
+                   <td class="govuk-c-table__cell-CCD">-</td>
+                   <td class="govuk-c-table__cell-CCD">-</td>
+                   <td class="govuk-c-table__cell-CCD">-</td>
+                   <td class="govuk-c-table__cell-CCD">-</td>
+                 </tr>
+
+                 <tr class="govuk-c-table__row">
+                   <th class="govuk-c-table__cell-CCD-ref table_linked" scope="row"><a href="">RC-0000-0000-0000-0000<a/></th>
+                     <td class="govuk-c-table__cell-CCD">-</td>
+                     <td class="govuk-c-table__cell-CCD">-</td>
+                     <td class="govuk-c-table__cell-CCD">-</td>
+                     <td class="govuk-c-table__cell-CCD">-</td>
+                     <td class="govuk-c-table__cell-CCD">-</td>
+                     <td class="govuk-c-table__cell-CCD">-</td>
+                     <td class="govuk-c-table__cell-CCD">-</td>
+                 </tr> -->
+
+                 <tr class="govuk-c-table__row no-border-bottom">
+                   <th class="govuk-c-table__cell-CCD-ref table_linked" scope="row"><a href="3RC-6673-6629-0012-4793-non-remission.html">RC-6673-6629-0012-4793<a/></th>
+
+                   <td class="govuk-c-table__cell-CCD">13 Mar 2018</td>
+                   <td class="govuk-c-table__cell-CCD">Card</td>
+                   <td class="govuk-c-table__cell-CCD">£6,000.00</td>
+                   <td class="govuk-c-table__cell-CCD">Success</td>
+                   <td class="govuk-c-table__cell-CCD">No</td>
+                   <td class="govuk-c-table__cell-CCD">No</td>
+                 </tr>
+
+                 <tr class="govuk-c-table__row">
+                   <th class="govuk-c-table__cell-CCD-ref table_linked" scope="row"><a href="3RC-6673-6629-0012-4793-non-remission.html">RC-2245-8790-1124-8898<a/></th>
+
+                     <td class="govuk-c-table__cell-CCD">13 Mar 2018</td>
+                     <td class="govuk-c-table__cell-CCD">Card</td>
+                     <td class="govuk-c-table__cell-CCD">£4,000.00</td>
+                     <td class="govuk-c-table__cell-CCD">Success</td>
+                     <td class="govuk-c-table__cell-CCD">No</td>
+                     <td class="govuk-c-table__cell-CCD">No</td>
+                 </tr>
+
+                 <tr class="govuk-c-table__row no-border-bottom">
+                   <th class="govuk-c-table__cell-CCD-ref table_linked" scope="row"><a href="3RC-6673-6629-0012-4793-remission.html">RC-6673-6629-0012-4793<a/></th>
+
+                   <td class="govuk-c-table__cell-CCD">13 Mar 2018</td>
+                   <td class="govuk-c-table__cell-CCD">Card</td>
+                   <td class="govuk-c-table__cell-CCD">£5,000.00</td>
+                   <td class="govuk-c-table__cell-CCD">Success</td>
+                   <td class="govuk-c-table__cell-CCD">Yes</td>
+                   <td class="govuk-c-table__cell-CCD">No</td>
+                 </tr>
+
+                 <tr class="govuk-c-table__row">
+                   <th class="govuk-c-table__cell-CCD-ref table_linked" scope="row"><a href="3RC-6673-6629-0012-4793-remission.html">RC-2245-8790-1124-8898<a/></th>
+
+                     <td class="govuk-c-table__cell-CCD">13 Mar 2018</td>
+                     <td class="govuk-c-table__cell-CCD">Card</td>
+                     <td class="govuk-c-table__cell-CCD">£4,000.00</td>
+                     <td class="govuk-c-table__cell-CCD">Success</td>
+                     <td class="govuk-c-table__cell-CCD">Yes</td>
+                     <td class="govuk-c-table__cell-CCD">No</td>
+                 </tr>
+
+                 <tr class="govuk-c-table__row">
+                   <th class="govuk-c-table__cell-CCD-ref" scope="row"><a href="4RC-2234-7384-4467-7832.html">RC-2234-7384-4467-7832<a/></th>
+
+                   <td class="govuk-c-table__cell-CCD">18 Feb 2018</td>
+                   <td class="govuk-c-table__cell-CCD">Cheque</td>
+                   <td class="govuk-c-table__cell-CCD">£150.00</td>
+                   <td class="govuk-c-table__cell-CCD">Failed</td>
+                   <td class="govuk-c-table__cell-CCD">No</td>
+                   <td class="govuk-c-table__cell-CCD">No</td>
+                 </tr>
+
+                 <tr class="govuk-c-table__row no-border-bottom">
+                   <th class="govuk-c-table__cell-CCD-ref table_linked" scope="row"><a href="5RC-5547-0908-1112-1451-non-remission.html">RC-5547-0908-1112-1451<a/></th>
+
+                   <td class="govuk-c-table__cell-CCD">20 Mar 2018</td>
+                   <td class="govuk-c-table__cell-CCD">Card</td>
+                   <td class="govuk-c-table__cell-CCD">£275.50</td>
+                   <td class="govuk-c-table__cell-CCD">Success</td>
+                   <td class="govuk-c-table__cell-CCD">No</td>
+                   <td class="govuk-c-table__cell-CCD">No</td>
+                 </tr>
+
+                 <tr class="govuk-c-table__row">
+                   <th class="govuk-c-table__cell-CCD-ref table_linked" scope="row"><a href="5RC-5547-0908-1112-1451-non-remission.html">RC-3354-0986-1379-4478<a/></th>
+
+                     <td class="govuk-c-table__cell-CCD">20 Mar 2018</td>
+                     <td class="govuk-c-table__cell-CCD">Card</td>
+                     <td class="govuk-c-table__cell-CCD">£275.50</td>
+                     <td class="govuk-c-table__cell-CCD">Success</td>
+                     <td class="govuk-c-table__cell-CCD">No</td>
+                     <td class="govuk-c-table__cell-CCD">No</td>
+                 </tr>
+
+                 <tr class="govuk-c-table__row no-border-bottom">
+                   <th class="govuk-c-table__cell-CCD-ref table_linked" scope="row"><a href="5RC-5547-0908-1112-1451-remission.html">RC-5547-0908-1112-1451<a/></th>
+
+                   <td class="govuk-c-table__cell-CCD">20 Mar 2018</td>
+                   <td class="govuk-c-table__cell-CCD">Card</td>
+                   <td class="govuk-c-table__cell-CCD">£175.50</td>
+                   <td class="govuk-c-table__cell-CCD">Success</td>
+                   <td class="govuk-c-table__cell-CCD">Yes</td>
+                   <td class="govuk-c-table__cell-CCD">No</td>
+                 </tr>
+
+                 <tr class="govuk-c-table__row">
+                   <th class="govuk-c-table__cell-CCD-ref table_linked" scope="row"><a href="5RC-5547-0908-1112-1451-remission.html">RC-3354-0986-1379-4478<a/></th>
+
+                     <td class="govuk-c-table__cell-CCD">20 Mar 2018</td>
+                     <td class="govuk-c-table__cell-CCD">Card</td>
+                     <td class="govuk-c-table__cell-CCD">£175.50</td>
+                     <td class="govuk-c-table__cell-CCD">Success</td>
+                     <td class="govuk-c-table__cell-CCD">Yes</td>
+                     <td class="govuk-c-table__cell-CCD">No</td>
+                 </tr>
+
+                 <tr class="govuk-c-table__row">
+                   <th class="govuk-c-table__cell-CCD-ref" scope="row"><a href="6RC-2330-2678-1160-5316-remission.html">RC-2330-2678-1160-5316<a/></th>
+
+                   <td class="govuk-c-table__cell-CCD">21 Mar 2018</td>
+                   <td class="govuk-c-table__cell-CCD">Credit account</td>
+                   <td class="govuk-c-table__cell-CCD">£150.00</td>
+                   <td class="govuk-c-table__cell-CCD">Success</td>
+                   <td class="govuk-c-table__cell-CCD">No</td>
+                   <td class="govuk-c-table__cell-CCD">Requested</td>
+                 </tr>
+
+                 <tr class="govuk-c-table__row no-border-bottom">
+                   <th class="govuk-c-table__cell-CCD-ref table_linked" scope="row"><a href="7RC-2212-0962-3878-4592-remission.html">RC-2212-0962-3878-4592<a/></th>
+
+                   <td class="govuk-c-table__cell-CCD">23 Mar 2018</td>
+                   <td class="govuk-c-table__cell-CCD">Credit account</td>
+                   <td class="govuk-c-table__cell-CCD">£300.00</td>
+                   <td class="govuk-c-table__cell-CCD">Success</td>
+                   <td class="govuk-c-table__cell-CCD">Yes</td>
+                   <td class="govuk-c-table__cell-CCD">No</td>
+                 </tr>
+
+                 <tr class="govuk-c-table__row">
+                   <th class="govuk-c-table__cell-CCD-ref table_linked" scope="row"><a href="7RC-2212-0962-3878-4592-remission.html">RC-2245-6777-1342-3532<a/></th>
+
+                     <td class="govuk-c-table__cell-CCD">23 Mar 2018</td>
+                     <td class="govuk-c-table__cell-CCD">Credit account</td>
+                     <td class="govuk-c-table__cell-CCD">£300.00</td>
+                     <td class="govuk-c-table__cell-CCD">Success</td>
+                     <td class="govuk-c-table__cell-CCD">Yes</td>
+                     <td class="govuk-c-table__cell-CCD">No</td>
+                 </tr>
+
+                 <tr class="govuk-c-table__row">
+                   <th class="govuk-c-table__cell-CCD-ref" scope="row"><a href="8RC-4465-3121-3412-1287.html">RC-4465-3121-3412-1287<a/></th>
+
+                   <td class="govuk-c-table__cell-CCD">26 Mar 2018</td>
+                   <td class="govuk-c-table__cell-CCD">Card</td>
+                   <td class="govuk-c-table__cell-CCD">£125.00</td>
+                   <td class="govuk-c-table__cell-CCD">Success</td>
+                   <td class="govuk-c-table__cell-CCD">Yes</td>
+                   <td class="govuk-c-table__cell-CCD">Yes</td>
+                 </tr>
+
+                 <tr class="govuk-c-table__row">
+                   <th class="govuk-c-table__cell-CCD-ref" scope="row"><a href="9RC-2215-5489-9987-1145.html">RC-2215-5489-9987-1145<a/></th>
+                  
+                   <td class="govuk-c-table__cell-CCD">29 Mar 2018</td>
+                   <td class="govuk-c-table__cell-CCD">Full remission</td>
+                   <td class="govuk-c-table__cell-CCD">£00.00</td>
+                   <td class="govuk-c-table__cell-CCD">Success</td>
+                   <td class="govuk-c-table__cell-CCD">Yes</td>
+                   <td class="govuk-c-table__cell-CCD">No</td>
+                 </tr>
+
+               </tbody>
+          </table>
+
+
+      </div>
+
+
+      <div class="govuk-o-grid__item govuk-o-grid__item--two-thirds">
+
+        <!-- <footer id="mainFooter">
+          <small>
+            &copy; <a href="index.html">companyname</a>
+            <time id="thisYear"></time>
+          </small>
+        </footer> -->
+        </form>
+
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}
